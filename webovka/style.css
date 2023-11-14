@@ -1,7 +1,7 @@
 body {
+
     font-family: 'Open Sans', sans-serif;
-    background-image: url('img/background.png');
-    background-size: cover;
+    background-color: #eaeaea;
     margin: 0;
     padding: 0;
 }
@@ -10,12 +10,13 @@ header {
     position: sticky;
     display:flex;
     justify-content: center;
-    background-color: #1db954;
+    background-color: #4ac776;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     padding: 20px 0 20px 0;
     width: 100%;
-
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 footer{
@@ -27,8 +28,34 @@ h2{
     justify-content: center;
 }
 
+p {
+    font-size: 14px;
+    color: black;
+    border-radius: 8px;
+    text-align: center; 
+    margin: 0 auto;
+    max-width: 75%;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    background-color: #33c065;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 60%;
+}
+
+h3 {
+    font-size: 20px;
+    color: black;
+    border-radius: 8px;
+    text-align: center;
+}
+
 main {
-    padding: 80px;
+    padding: 60px;
 }
 
 footer {
