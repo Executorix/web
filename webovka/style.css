@@ -1,61 +1,70 @@
 body {
 
     font-family: 'Open Sans', sans-serif;
-    background-color: #eaeaea;
+    background-color: #262626;
     margin: 0;
     padding: 0;
 }
 
 header {
     position: sticky;
-    display:flex;
+    display: flex;
     justify-content: center;
     background-color: #4ac776;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    padding: 20px 0 20px 0;
-    width: 100%;
+    margin: 0 20px;
+    padding: 20px;
+    width: calc(100% - 50px);
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
+
 
 footer{
     background-color:gray;
 }
 
-h2{
+h1{
     display: flex;
+    color:white;
     justify-content: center;
+    font-size: 40px;
+    background-color: #4ac776;
+    margin: auto;
+    padding: 10px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
 }
 
 p {
-    font-size: 14px;
-    color: black;
+    font-size: 16px;
+    color: #d9d9d9;
     border-radius: 8px;
     text-align: center; 
-    margin: 0 auto;
-    max-width: 75%;
-    padding: 10px;
+    margin: 0% 10%;
+    padding-bottom: 20px;
 }
 
 h2 {
-    font-size: 20px;
-    background-color: #33c065;
-    margin: 0 auto;
-    padding: 10px;
-    border-radius: 8px;
-    max-width: 60%;
-}
-
-h3 {
-    font-size: 20px;
-    color: black;
+    font-size: 30px;
+    color: white;
     border-radius: 8px;
     text-align: center;
 }
 
 main {
     padding: 60px;
+}
+
+.text {
+    background-color: #1a1a1a;
+    margin: 0 auto;
+    padding: 10px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    
 }
 
 footer {
@@ -76,9 +85,9 @@ footer {
     font-family: 'Open Sans', sans-serif;
     padding: 14px 16px;
     text-decoration: none;
-    color: #212121;
+    color: white;
     text-transform: uppercase;
-    transition: color 1s, background-color 1s, transform 0.2s, border-radius 0.2s; /* Added border-radius transition */
+    transition: color 1s, background-color 1s, transform 0.2s, border-radius 0.2s;
     border-radius: 30px;
 }
 
@@ -87,40 +96,36 @@ footer {
     color: black;
     border-radius: 30px;
     border-bottom: 2px solid white;
-    transform: scale(1.05);
 }
 
 .navigace li a.active {
     background-color: #188d00;
-    color: black;
+    color: whitesmoke;
     border-radius: 30px;
-    transform: scale(1.05);
-}
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    
 }
 
 .row {
     display: flex;
-    margin-bottom: 20px;
+    margin: 2%;
 }
 
 .column {
     flex: 33.33%;
     box-sizing: border-box;
+    margin: 0.5%;
 }
 
 .album {
     text-align: center;
-    background-color: #fff;
+    background-color: #535353;
     border-radius: 8px;
-    padding: 10px;
+    padding: 0.5%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out;
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
 }
 
 .album:hover {
@@ -129,16 +134,59 @@ footer {
 
 .album img {
     max-width: 100%;
-    height: 350px; 
+    height: 530px; 
     object-fit: cover;
     border-radius: 8px;
-    margin-bottom: 10px;
 }
 
 .album p {
     font-size: 14px;
-    color: #555;
+    color: white;
     margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #551A8B;
+}
+
+a:hover, a:active {
+    color: #FF4500;
+}
+
+
+@media (max-width: 1010px) {
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .column {
+        flex: 100%;
+        margin-bottom: 2%;
+    }
+
+    .album img {
+        height: 200px; 
+        margin-bottom: 5px; 
+    }
+
+    .navigace {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigace li {
+        margin: 10px 0;
+    }
+
+    main{
+        padding: 3px;
+    }
+
+    
 }
 
 
