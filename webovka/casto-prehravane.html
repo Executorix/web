@@ -1,32 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="cs">
 <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="webová stránka pro 4IZ268">
+    <meta name="keywords" content="Hudba, Swipefy, Playlist, Album">
+    <meta name="author" content="David Mäsiar">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
     <title>Často přehrávané - MäsiarWeb</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" type="image/png" href="img/music.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.ico">
 </head>
 <body>
     <header>
+        <h1><a href="index.html">My Sound</a></h1>
         <div class="container">
             <nav>
                 <ul class="navigace">
                    <li><a href="index.html">Úvod</a></li>
                    <li><a href="muj-hudebni-styl.html">Můj hudební vkus</a></li>
-                   <li><a href="casto-prehravane.html" class="active">Mé nejposlouchanější playlisty</a></li>
+                   <li><a href="casto-prehravane.html" class="active">Mé top playlisty</a></li>
                    <li><a href="nova-hudba.html">Nová hudba</a></li>
-                   <li><a href="tvorba-playlistu.html">Jak tvořím playlisty</a></li>
+                   <li><a href="tvorba-playlistu.html">Tvorba playlistů</a></li>
                 </ul>
                </nav>
     </header>
     <main>
-        <h1></h1>
-        <p></p>
+        <h1>Mé nejposlouchanější playlisty</h1>
+        <div class="text">
+            <p>Rád bych se s vámi podělil o několik playlistů z mé vlastní tvorby, které patří mezi mé nejposlouchanější a k nimž se nejraději vracím. Vložil jsem zde tedy 
+                tři ukázky.
+            </p>
+            <p>V playlistu "rock bangers" najdete mé oblíbené skladby z rocku, pop-rocku a metalu. Naopak playlist "theRAPy" je hříčkou se slovy,
+                 která reflektují, že se zde převážně nachází rapová hudba a zároveň je mou formou terapie a poslouchám ho vždy, když mám horší náladu. 
+                 Podobně to funguje i u "teRAPie", avšak, jak již napovídá název, tento playlist obsahuje hudbu slovenských interpretů.</p>
+            <div class="playlisty-container"></div>
+            <a href="https://open.spotify.com/playlist/48Xo0TCAnUIxGwZWNn4CXe?si=c6e72d53aaa84103" target="_blank">
+                <img class="playlisty" src="img/therapy.playlist.png" alt="Obrázek playlistu theRAPy">
+            </a>
+            <a href="https://open.spotify.com/playlist/3slEwpJkTUAnOGE8Y24fgg?si=466b1bdaa44c4a0a" target="_blank">
+                <img class="playlisty" src="img/rockbangers.playlist.png" alt="Obrázek playlistu rock bangers">
+            </a>
+            <a href="https://open.spotify.com/playlist/42ou3gbFp5qI7IAoQkID75?si=8aa676a98f9f420e" target="_blank">
+                <img class="playlisty" src="img/terapia.playlist.png" alt="Obrázek playlistu teRAPia">
+            </a>
+
+        </div>
+
     </main>
     <footer>
-        <p>&copy; 2023 David Mäsiar</p>
+        <p>&copy; 2023 David Mäsiar, pro 4IZ268</p>
     </footer>
 </body>
 </html>
